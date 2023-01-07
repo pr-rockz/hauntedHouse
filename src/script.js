@@ -307,7 +307,8 @@ const tick = () => {
 
   // Ghost Update
   objs.forEach(({ mixer }) => {
-    mixer.update(clock.getDelta() * 100);
+    mixer.update(0.012);
+    // console.log(clock.getDelta())
   });
 
   // Render
